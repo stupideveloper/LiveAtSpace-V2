@@ -26,7 +26,7 @@ function Home({ launches }) {
             <div className={styles.countdown}>
                 <span><GetLaunchCountdown time={launch.launchdate}/></span>
                 <div className={styles.launchtimewrapper}>
-                  <p><span>Launch on/at:</span> <span><GetLaunchDate time={launch.launchdate}/></span></p>
+                  <p><span>Launch on:</span> <span><GetLaunchDate time={launch.launchdate}/></span></p>
                 </div>
             </div>
             <h3>{launch.title}</h3>
