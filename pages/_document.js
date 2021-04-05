@@ -6,13 +6,16 @@ class MyDocument extends Document {
     const initialProps = await Document.getInitialProps(ctx)
     return { ...initialProps }
   }
-  
+  componentDidMount() {
+    console.log("Using custom document")
+  }
   render() {
     return (
       <Html>
-        <Head />
+        <Head>
+        <div id="532316696" dangerouslySetInnerHTML={mediaNetHeadTag()} />
+        </Head>
         <body>
-          <div id="532316696" dangerouslySetInnerHTML={mediaNetHeadTag()} />
           <Main />
           <NextScript />
         </body>
@@ -21,7 +24,7 @@ class MyDocument extends Document {
   }
 }
 function mediaNetHeadTag() {
-    console.log("Using custom document")
+    
     return{__html: '<script type="text/javascript">try {window._mNHandle.queue.push(function (){window._mNDetails.loadTag("532316696", "300x250", "532316696");});}catch (error) {}</script>'}
   }
 export default MyDocument

@@ -13,6 +13,7 @@ function Home({ launches }) {
         <title>Live@Space</title>
         <script data-ad-client="ca-pub-5373807673490757" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       </Head>
+      <script type="text/javascript" src="https://s.skimresources.com/js/188318X1659053.skimlinks.js"></script>
       {youtubeIsVisible &&
         <div className={youtubePlayerStyles.center_youtube_player}>
           <div className={youtubePlayerStyles.iframe_wrapper}>
@@ -58,6 +59,7 @@ function Home({ launches }) {
 function mediumAd() {
   return{__html: '<div id="532316696"><script type="text/javascript">try {window._mNHandle.queue.push(function (){window._mNDetails.loadTag("532316696", "300x250", "532316696");});}catch (error) {}</script></div>'}
 }
+
 
 export async function getStaticProps() {
   // Development
