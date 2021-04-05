@@ -35,7 +35,7 @@
 /* Coutdown */
 .countdown {
   padding: 0.5rem;
-  width: min-content;
+  width: max-content;
   background-color: rgba(4, 4, 26, 0.2);
   border: var(--border);
   border-top: none;
