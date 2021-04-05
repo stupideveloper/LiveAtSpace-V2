@@ -22,7 +22,6 @@ function Home({ launches }) {
           <span className={youtubePlayerStyles.close} onClick={function(){setYoutubeIsVisible(false); setYoutubeUrl("")}}>✕</span>
         </div>
       }
-
       <div className={styles.launches}>
         {launches.map((launch) => (
           <div key={launch.id} className={styles.griditem} style={{background:`linear-gradient(rgba(4, 4, 26, 0.7), rgba(4, 4, 26, 0.45)), url(${launch.backgroundImage})`, backgroundPositionY:`${launch.backgroundImagePlacement}%`, backgroundSize:"cover"}}>
@@ -50,7 +49,6 @@ function Home({ launches }) {
         ))}
 
         <div className={styles.griditem} dangerouslySetInnerHTML={mediumAd()}/>
-        <div className={styles.griditem}>helo</div>
 
       </div>
     </>
