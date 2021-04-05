@@ -38,8 +38,9 @@ function Home({ launches }) {
   )
 }
 export async function getStaticProps() {
-  const res = await fetch('http://localhost:3000/api/launches')
-  const launches = await res.json()
+  //const res = await fetch('http://localhost:3000/api/launches')
+  //const launches = await res.json()
+  const launches = {}
 
   return {
     props: {
