@@ -4,7 +4,8 @@ body {
   margin: 0;
   font-family: var(--font);
   background-color: var(--darkblue);
-  color:  var(--gru );
+  color:  var(--gru);
+  overflow-x: hidden;
 }
 
 a {
