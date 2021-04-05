@@ -22,7 +22,7 @@ function Home({ launches }) {
       }
       <div className={styles.launches}>
         {launches.map((launch) => (
-          <div key={launch.id} className={styles.griditem} style={{background:`linear-gradient(rgba(4, 4, 26, 0.7), rgba(4, 4, 26, 0.3)), url(${launch.backgroundImage})`, backgroundPositionY:`${launch.backgroundImagePlacement}%`, backgroundSize:"cover"}}>
+          <div key={launch.id} className={styles.griditem} style={{background:`linear-gradient(rgba(4, 4, 26, 0.7), rgba(4, 4, 26, 0.45)), url(${launch.backgroundImage})`, backgroundPositionY:`${launch.backgroundImagePlacement}%`, backgroundSize:"cover"}}>
             <div className={styles.countdown}>
                 <span><GetLaunchCountdown time={launch.launchdate}/></span>
                 <div className={styles.launchtimewrapper}>
@@ -33,6 +33,11 @@ function Home({ launches }) {
             <h4>{launch.description}</h4>
             {launch.youtubeWatchcode &&
               <button onClick={function(){ setYoutubeIsVisible(true); setYoutubeUrl(`https://www.youtube-nocookie.com/embed/${launch.youtubeWatchcode}`)}} className={styles.white, styles.white} href={`${launch.youtubeWatchcode}`} >{launch.buttonText}</button>
+            }
+            {!launch.youtubeWatchcode &&
+              <div style={{margin:0, paddingBottom:"1rem", fontSize:"0.8rem", color:"var(--darkblue)"}}>
+                <span style={{ backgroundColor:"var(--darkblue-transparent)", padding:"3px", border:"var(--border)", cursor:"default", userSelect:"none"}}>A live video will appear here when avaliable</span>
+              </div>
             }
           </div>
         ))}
