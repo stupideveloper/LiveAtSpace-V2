@@ -7,7 +7,6 @@ export function GetLaunchDate(time) {
         return(<>{launchDate.toHTTP()}</>)
     }
     return(<>Unknown / Error</>)
-
 }
 export function GetLaunchCountdown(time) {
     if(time.time) {
