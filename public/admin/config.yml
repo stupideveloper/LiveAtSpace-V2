@@ -1,5 +1,5 @@
 backend:
-  name: LiveAtSpace-V2
+  name: github
   branch: master # Branch to update (optional; defaults to master)
   repo: widelachie/LiveAtSpace-V2
 publish_mode: editorial_workflow
