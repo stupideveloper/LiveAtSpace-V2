@@ -14,6 +14,7 @@ function Home({ launches }) {
         <script data-ad-client="ca-pub-5373807673490757" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       </Head>
       <script type="text/javascript" src="https://s.skimresources.com/js/188318X1659053.skimlinks.js"></script>
+
       {youtubeIsVisible &&
         <div className={youtubePlayerStyles.center_youtube_player}>
           <div className={youtubePlayerStyles.iframe_wrapper}>
@@ -22,7 +23,9 @@ function Home({ launches }) {
           <span className={youtubePlayerStyles.close} onClick={function(){setYoutubeIsVisible(false); setYoutubeUrl("")}}>✕</span>
         </div>
       }
+
       <div className={styles.launches}>
+        
         {launches.map((launch) => (
           <div key={launch.id} className={styles.griditem} style={{background:`linear-gradient(rgba(4, 4, 26, 0.7), rgba(4, 4, 26, 0.45)), url(${launch.backgroundImage})`, backgroundPositionY:`${launch.backgroundImagePlacement}%`, backgroundSize:"cover"}}>
             
