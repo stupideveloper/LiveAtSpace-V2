@@ -10,7 +10,8 @@ function Home({ launches }) {
   return (
     <>  
       <Head>
-        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        <title>Live@Space</title>
+        <script data-ad-client="ca-pub-5373807673490757" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       </Head>
       {youtubeIsVisible &&
         <div className={youtubePlayerStyles.center_youtube_player}>
