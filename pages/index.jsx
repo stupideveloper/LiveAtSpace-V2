@@ -35,7 +35,7 @@ function Home({ launches }) {
               <button onClick={function(){ setYoutubeIsVisible(true); setYoutubeUrl(`https://www.youtube-nocookie.com/embed/${launch.youtubeWatchcode}`)}} className={styles.white, styles.white} href={`${launch.youtubeWatchcode}`} >{launch.buttonText}</button>
             }
             {!launch.youtubeWatchcode &&
-              <div style={{margin:0, paddingBottom:"1rem", fontSize:"0.8rem", color:"var(--darkblue)"}}>
+              <div style={{margin:0, paddingBottom:"1rem", fontSize:"0.8rem", color:"var(--gru)"}}>
                 <span style={{ backgroundColor:"var(--darkblue-transparent)", padding:"3px", border:"var(--border)", cursor:"default", userSelect:"none"}}>A live video will appear here when avaliable</span>
               </div>
             }
@@ -46,9 +46,19 @@ function Home({ launches }) {
   )
 }
 export async function getStaticProps() {
-  const res = await fetch('https://liveatspace.com/launches.json')
-  const launches = await res.json()
-
+  // Development
+  const res = await fetch('http://localhost:3000/launches.json'); var launches = await res.json();
+  // Prod
+  //res = await fetch('https://liveatspace.com/launches.json'); launches = await res.json()
+  // Sort from earliest to latest
+  launches = launches.sort((a, b) => {
+		var amili = new Date(a.launchdate)
+		var bmili = new Date(b.launchdate)
+		bmili = bmili.getTime()
+		amili = amili.getTime()
+		if (amili < bmili) return -1
+		return amili > bmili ? 1 : 0
+	})
   return {
     props: {
       launches,
