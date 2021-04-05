@@ -2,13 +2,16 @@ import React, { useState } from 'react';
 import styles from '../styles/Home.module.css'
 import youtubePlayerStyles from '../styles/YoutubePlayer.module.css'
 import {GetLaunchDate,GetLaunchCountdown} from "../components/timecalculations"
-
+import Head from 'next/head'
 
 function Home({ launches }) {
   const [youtubeIsVisible, setYoutubeIsVisible] = useState(false);
   const [youtubeUrl, setYoutubeUrl] = useState("");
   return (
     <>  
+      <Head>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+      </Head>
       {youtubeIsVisible &&
         <div className={youtubePlayerStyles.center_youtube_player}>
           <div className={youtubePlayerStyles.iframe_wrapper}>
