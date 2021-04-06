@@ -3,12 +3,13 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100% 100% 100% 100% 100% 100%;
   gap: 0px 0px;
+  margin-bottom: 2.5rem;
+  overflow-x: hidden;
 }
 @media only screen and (max-width: 900px) {
   .launches {
     display: block;
   }
-
 }
 .launches > .griditem {
   padding: 0 1rem;
@@ -22,7 +23,6 @@
   padding: 1.2rem 0;
   font-weight: 600;
 }
-
 .button, .white {
   padding: 0.6rem;
   background-color: var(--gru);
@@ -31,7 +31,6 @@
   cursor: pointer;
   margin-bottom: 1.2rem;
 }
-
 /* Coutdown */
 .countdown {
   padding: 0.5rem;
@@ -45,7 +44,6 @@
   position: relative;
   cursor:default;
 }
-
 .launchtimewrapper > p {
   display: block;
   background-color: var(--darkblue);
@@ -55,7 +53,6 @@
   margin-top: 0.5rem;
   user-select: none;
 }
-
 .countdown .launchtimewrapper {
   background: #ddd;
   height: 0;
@@ -67,8 +64,6 @@
   transform: skewX(-15deg);
   visibility: hidden;
 }
-
-
 .countdown:hover .launchtimewrapper {
   visibility: visible;
   opacity: 1;

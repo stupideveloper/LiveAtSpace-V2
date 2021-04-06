@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css'
 import youtubePlayerStyles from '../styles/YoutubePlayer.module.css'
 import {GetLaunchDate,GetLaunchCountdown} from "../components/timecalculations"
 import Head from 'next/head'
+import FootNav from '../components/footnav'
 
 function Home({ launches }) {
   const [youtubeIsVisible, setYoutubeIsVisible] = useState(false);
@@ -54,6 +55,7 @@ function Home({ launches }) {
         <div className={styles.griditem} dangerouslySetInnerHTML={mediumAd()}/>
 
       </div>
+      <FootNav />
     </>
   )
 }
