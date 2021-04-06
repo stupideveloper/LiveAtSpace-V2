@@ -39,7 +39,7 @@ class Home extends React.Component {
         {this.state.youtubeIsVisible &&
           <div className={youtubePlayerStyles.center_youtube_player}>
             <div className={youtubePlayerStyles.iframe_wrapper}>
-              <iframe width="1080" height="607.5" src={this.state.youtubeUrl} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowFullScreen></iframe>
+              <iframe width="100%" height="100%" src={this.state.youtubeUrl} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowFullScreen></iframe>
             </div>
             <span className={youtubePlayerStyles.close} onClick={() => {this.setState({youtubeIsVisible: false, youtubeUrl:"" })}}>✕</span>
           </div>
