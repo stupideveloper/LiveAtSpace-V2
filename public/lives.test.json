@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Nerdle Cam 4K - SpaceX Starship Launch Facility",
+    "channel": "LabPardre",
+    "youtubeWatchcode": "sTA0GTgFn5E",
+    "description":"A 24/7 live view of the Boca Chica Launch Facility."
+  },
+  {
+    "id": 2,
+    "title": "Launch Pad Cam - SpaceX Starship Launch Facility",
+    "channel": "LabPardre",
+    "youtubeWatchcode": "qCbgoqMcirI",
+    "description":"A 24/7 live view of the Starship Launchpad."
+  },
+  {
+    "id": 2,
+    "title": "NSF Fleetcam - LIVE SpaceX Fleet Operations at Port Canaveral",
+    "channel": "NASASpaceflight",
+    "youtubeWatchcode": "gnt2wZBg89g",
+    "backgroundImagePlacement": 10,
+    "description":"NASASpaceflight's Fleetcam, a 24x7 camera following SpaceX fleet operations at Port Canaveral. See live booster returns aboard ASDS, rocket processing operations, the fairing catchers GO Ms. Tree and Ms. Chief, Crew recovery and support ships GO Navigator, Searcher, and Quest, and a veritable ballet of tugs and cranes."
+  },
+  {
+    "id": 3,
+    "title": "NASA Live / NASA TV",
+    "channel": "NASA",
+    "youtubeWatchcode": "21X5lGlDOfg",
+    "backgroundImagePlacement": 10,
+    "description":"NASA TV airs a variety of regularly scheduled, pre-recorded educational and public relations programming 24 hours a day on its various channels. The network also provides an array of live programming, such as coverage of missions, events (spacewalks, media interviews, educational broadcasts), press conferences and rocket launches. "
+  }
+]
