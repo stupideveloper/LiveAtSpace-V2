@@ -1,10 +1,9 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
 
-class MyDocument extends Document {
+class CustomDocument extends Document {
 	static async getInitialProps(ctx) {
 		const initialProps = await Document.getInitialProps(ctx);
-		console.log("Using custom document");
 		return { ...initialProps };
 	}
 
@@ -12,7 +11,6 @@ class MyDocument extends Document {
 		return (
 			<Html>
 				<Head />
-					<div id="532316696" dangerouslySetInnerHTML={mediaNetHeadTag()} />
 				<body>
 					<Main />
 					<NextScript />
@@ -20,9 +18,8 @@ class MyDocument extends Document {
 			</Html>
 		);
 	}
+	componentDidMount() {
+		console.log("Using custom document");
+	}
 }
-function mediaNetHeadTag() {
-    
-	return{__html: "<script type=\"text/javascript\">try {window._mNHandle.queue.push(function (){window._mNDetails.loadTag(\"532316696\", \"300x250\", \"532316696\");});}catch (error) {}</script>"};
-}
-export default MyDocument;
+export default CustomDocument;

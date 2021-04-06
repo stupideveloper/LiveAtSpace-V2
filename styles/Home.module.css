@@ -2,8 +2,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100% 100% 100% 100% 100% 100%;
-  gap: 0px 0px;
-  margin-bottom: 2.5rem;
   overflow-x: hidden;
 }
 @media only screen and (max-width: 900px) {
@@ -68,4 +66,39 @@
   visibility: visible;
   opacity: 1;
   transform: translateY(0); 
+}
+
+/* Live */
+.seperator {
+  margin: 0;
+  color: var(--darkgru);
+}
+.lives {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100% 100% 100% 100% 100% 100%;
+  margin-bottom: 2.5rem;
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 900px) {
+  .lives {
+    display: block;
+  }
+}
+.lives > .griditem {
+  padding: 0 1rem;
+  background-size: cover;
+}
+
+.lives > .griditem {
+  padding: 0 1rem;
+  background-size: cover;
+}
+.lives > .griditem > h3 {
+  padding-top: 1.2rem
+}
+.lives > .griditem > h4 {
+  line-height: 1.3rem;
+  padding: 1.2rem 0;
+  font-weight: 600;
 }
