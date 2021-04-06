@@ -105,11 +105,11 @@ class Home extends React.Component {
 
 export async function getStaticProps() {
   // Development
-  const launchRes = await fetch('http://localhost:3000/launches.test.json'); var launches = await launchRes.json();
-  const liveRes = await fetch('http://localhost:3000/lives.test.json'); var lives = await liveRes.json();
+  //const launchRes = await fetch('http://localhost:3000/launches.test.json'); var launches = await launchRes.json();
+  //const liveRes = await fetch('http://localhost:3000/lives.test.json'); var lives = await liveRes.json();
   // Prod
-  //const launchRes = await fetch('https://liveatspace.com/launches.json'); var launches = await launchRes.json()
-  //const liveRes = await fetch('https://liveatspace.com/lives.json'); var lives = await liveRes.json()
+  const launchRes = await fetch('https://liveatspace.com/launches.json'); var launches = await launchRes.json()
+  const liveRes = await fetch('https://liveatspace.com/lives.json'); var lives = await liveRes.json()
   // Sort from earliest to latest
   launches = launches.sort((a, b) => {
 		var amili = new Date(a.launchdate)
