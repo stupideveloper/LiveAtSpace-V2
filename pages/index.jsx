@@ -61,7 +61,7 @@ function Home({ launches, lives }) {
 
       </div>
       <div>
-        <h2 style={{textAlign:"center", margin:"1rem 0", fontSize:"30px"}}>LIVE</h2>
+        <h2 className={styles.livetitle} style={{textAlign:"center", margin:"1rem 0", fontSize:"30px"}}>LIVE</h2>
         <hr className={styles.seperator}/>
       </div>
 
