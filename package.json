@@ -1,8 +1,9 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
-  "private": true,
+  "name": "liveatspace",
+  "version": "2.0.0",
+  "private": false,
   "scripts": {
+    "test": "jest",
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start"
