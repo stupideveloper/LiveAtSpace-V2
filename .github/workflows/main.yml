@@ -9,3 +9,5 @@ jobs:
       run: yarn
     - name: Run ESLint
       run: npx eslint .
+    - name: Run Jest
+      run: npx jest
