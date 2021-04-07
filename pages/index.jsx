@@ -34,7 +34,7 @@ class Home extends React.Component {
           <script data-ad-client="ca-pub-5373807673490757" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
           <script type="text/javascript" src="https://s.skimresources.com/js/188318X1659053.skimlinks.js"></script>
           <link rel="icon" type="image/svg" href="/static/logos/logo.svg" />
-          <meta property="og:title" content="Space" />
+          <meta property="og:title" content="Live@Space" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://liveatspace.com/" />
           <meta property="og:image" content="https://liveatspace.com/screenshot.png" />
