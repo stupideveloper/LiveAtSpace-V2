@@ -72,7 +72,7 @@ class Home extends React.Component {
               <h4>{launch.description}</h4>
 
               {launch.youtubeWatchcode &&
-                <button onClick={() =>{ this.setState({youtubeIsVisible: true, youtubeUrl:`https://www.youtube-nocookie.com/embed/${launch.youtubeWatchcode}&rel=0&iv_load_policy=3&enablejsapi=1&enablecastapi=1`})}} className={styles.white, styles.white} href={`${launch.youtubeWatchcode}`} >{launch.buttonText}</button>
+                <button onClick={() =>{ this.setState({youtubeIsVisible: true, youtubeUrl:`https://www.youtube-nocookie.com/embed/${launch.youtubeWatchcode}?rel=0&iv_load_policy=3&enablejsapi=1&enablecastapi=1`})}} className={styles.white, styles.white} href={`${launch.youtubeWatchcode}`} >{launch.buttonText}</button>
               }
 
               {!launch.youtubeWatchcode &&
@@ -97,7 +97,7 @@ class Home extends React.Component {
                 <h4>{live.description}</h4>
 
           
-                <button onClick={() => { this.setState({ youtubeIsVisible: true }); this.setState({ youtubeUrl: `https://www.youtube-nocookie.com/embed/${live.youtubeWatchcode}&rel=0&iv_load_policy=3&enablejsapi=1&enablecastapi=1`});}} className={styles.white, styles.white} href={`${live.youtubeWatchcode}`} >Watch</button>
+                <button onClick={() => { this.setState({ youtubeIsVisible: true }); this.setState({ youtubeUrl: `https://www.youtube-nocookie.com/embed/${live.youtubeWatchcode}?rel=0&iv_load_policy=3&enablejsapi=1&enablecastapi=1`});}} className={styles.white, styles.white} href={`${live.youtubeWatchcode}`} >Watch</button>
                 
 
               </div>
