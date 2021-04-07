@@ -39,4 +39,11 @@
         width: 80vw;
         padding-bottom: 40.6%;
     }
-  }
+}
+
+@media only screen and (max-height: 600px) {
+    .iframe_wrapper {
+        width: 80vw;
+        padding-bottom: 40.6%;
+    }
+}
