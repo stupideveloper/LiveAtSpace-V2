@@ -10,4 +10,4 @@ jobs:
     - name: Run ESLint
       run: npx eslint .
     - name: Run Jest
-      run: npx jest
+      run: npx jest --passWithNoTests
