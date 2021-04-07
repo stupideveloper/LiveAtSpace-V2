@@ -32,9 +32,16 @@ class Home extends React.Component {
         <Head>
           <title>Live@Space</title>
           <script data-ad-client="ca-pub-5373807673490757" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <script type="text/javascript" src="https://s.skimresources.com/js/188318X1659053.skimlinks.js"></script>
           <link rel="icon" type="image/svg" href="/static/logos/logo.svg" />
+          <meta property="og:title" content="Space" />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://liveatspace.com/" />
+          <meta property="og:image" content="https://liveatspace.com/screenshot.png" />
+          <meta property="og:site_name" content="Live@Space" />
+          <meta property="og:description" content="Live@Space was and is developed to serve as a hub for all rocket future launches and other space activity. It all launches from SpaceX, NASA, Rocket Lab and all other areospace companies and orginisations. " />
+          <meta name="description" content="Live@Space was and is developed to serve as a hub for all rocket future launches and other space activity. It all launches from SpaceX, NASA, Rocket Lab and all other areospace companies and orginisations. "/>
         </Head>
-        <script type="text/javascript" src="https://s.skimresources.com/js/188318X1659053.skimlinks.js"></script>
 
         {this.state.youtubeIsVisible &&
           <div className={youtubePlayerStyles.center_youtube_player}>
