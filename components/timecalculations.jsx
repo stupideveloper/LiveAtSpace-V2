@@ -4,6 +4,7 @@ export function GetLaunchDate(time) {
     if(time.time) {
         // Get launch time
         const launchDate = DateTime.fromISO(time.time);
+        console.log(time.time)
         return(<>{launchDate.toHTTP()}</>)
     }
     return(<>Unknown / Error</>)
